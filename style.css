@@ -1,0 +1,25 @@
+body {
+    background-color:aquamarine;
+    background-blend-mode:darken;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.493)), url(background/Background\ 4.jpg);
+    height: 400px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+div {
+    color: white;
+    text-align: center;
+    margin: 100px 60px;
+    font-size: 15px;
+    font-family:sans-serif;
+    font-weight: bolder;
+}
+
+button, a {
+    height: 40px;
+    width: 80px;
+    border-radius: 2px;
+    color: black;
+}

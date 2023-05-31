@@ -1,51 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping-Cart</title>
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
+
 <body>
-    <div>
-        <h1>S</h1>
-        <a href="index.html"><i class="fa-solid fa-house"></i></a>
-        <a href=""><i class="fa-regular fa-share-from-square"></i></a>
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="menu.html"><i class="fa-solid fa-burger"></i></a>
-        <a href=""><i class="fa-solid fa-location-dot"></i></a>
-    </div>
-    <h1>CART</h1>
-    <div>
-        <div>
-            <img src="International Dishes/Cheesy-Hasselback.jpg" alt="Cheesy-Hasselback" width="50px" height="50px">
-            <img src="soup/egusi-soup-recipe.jpg" alt="Egusi-soup" width="50px" height="50px">
-            <img src="soup/Nkwobi.jpg" alt="Nkwobi" width="50px" height="50px">
-            <img src="soup/Egusi-Soup.jpg" alt="Efo-Riro" width="50px" height="50px">
-            <img src="Local Delicacies/ewa-agoyin.jpg" alt="Afang Soup" width="50px" height="50px">
-            <img src="Local Delicacies/yamarita.jpg" alt="Afang Soup" width="50px" height="50px">
-            <img src="International Dishes/Lobster thermidor.jpg" alt="Afang Soup" width="50px" height="50px">
-            <img src="Local Delicacies/Jollof Rice.jpg" alt="Afang Soup" width="50px" height="50px">
+    <main>
+        <div id="icon">
+            <p class="sushilogo">S.</p>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="menu.html"><i class="fa-solid fa-burger"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot"></i></a>
+            <a href=""><i class="fa-solid fa-share-from-square"></i></a>
         </div>
-        <div>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
-            <p>Cheesy-Hasselback</p>
-            <p>$30.00</p>
+        <div id="screen">
+            <h1 id="cart">CART</h1>
+            <div class="menulist">
+                <div id="mainbody">
+                    <div class="catalog">
+                        <img src="International Dishes/Cheesy-Hasselback.jpg" alt="Cheesy-Hasselback">
+                        <div class="pricetag">
+                            <p>Cheesy-Hasselback</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="soup/egusi-soup-recipe.jpg" alt="Egusi-soup">
+                        <div class="pricetag">
+                            <p>Egusi-Soup</p>
+                            <h5>$30.00</h5>
+                        </div><div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="soup/Nkwobi.jpg" alt="Nkwobi">
+                        <div class="pricetag">
+                            <p>Nkwobi</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="soup/Egusi-Soup.jpg" alt="Efo-Riro">
+                        <div class="pricetag">
+                            <p>Efo-Riro</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="Local Delicacies/ewa-agoyin.jpg" alt="Afang Soup">
+                        <div class="pricetag">
+                            <p>Ewa-Agoyin</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="Local Delicacies/yamarita.jpg" alt="Yamarita">
+                        <div class="pricetag">
+                            <p>Yamarita</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="International Dishes/Lobster thermidor.jpg" alt="Lobster">
+                        <div class="pricetag">
+                            <p>Lobster</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <div class="catalog">
+                        <img src="Local Delicacies/Jollof Rice.jpg" alt="Jollof Rice">
+                        <div class="pricetag">
+                            <p>Jollof-Rice</p>
+                            <h5>$30.00</h5>
+                        </div>
+                        <div class="controls">
+                            <span> - </span><input type="text" placeholder="0"
+                                style="width: 20px; text-align:center;"><span> + </span>
+                        </div>
+                        <h4> x </h4>
+                    </div>
+                    <!-- <div id="foods">
+                           
+                            <div class="pricetag">
+                                <p>Egusi-Soup</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Nkwobi</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Efo-Riro</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Afange Soup</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Yamarita</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Lobster</p>
+                                <h5>$30.00</h5>
+                            </div>
+                            <div class="pricetag">
+                                <p>Jollof Rice</p>
+                                <h5>$30.00</h5>
+                            </div>
+                        </div>
+                        <div id="input">
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                            <div class="controls">
+                                <span> - </span><input type="text" placeholder="0" style="width: 20px; text-align:center;"><span> + </span>
+                            </div>
+                        </div>
+                        <div id="delete">
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                            <p> x </p>
+                        </div> -->
+                </div>
+                <div id="order">
+                    <div id="confirm">
+                        <div class="header">
+                            <h1>Your Subtotal</h1>
+                        </div>
+                        <div class="total">
+                            <div class="sub">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="price">
+                                <p>$100.00</p>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Confirm Order</button>
+                        </div>
+                    </div>
+                    <div id="apply">
+                        <div class="header">
+                            <h1>Your Subtotal</h1>
+                        </div>
+                        <div class="promo">
+                            <input type="number" placeholder="enter promo code">
+                        </div>
+                        <div class="submit">
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 </body>
+
 </html>
