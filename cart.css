@@ -1,14 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     /* border: 5px solid green; */
-    overflow: [auto](1,2);
+    overflow: [auto](1, 2);
     margin: 0 30px 0 30px;
-    /* height: 100vh; */
-    /* width: 100vw; */
 }
 
 main {
@@ -16,14 +15,14 @@ main {
     grid-template-columns: 2fr 21fr;
     gap: 10px;
     height: 100%;
-    /* width: 100%; */
+    width: 100%;
     /* border: 5px solid black; */
     margin: 20px 20px 20px 0;
     padding: 20px 80px 20px 0;
     overflow: auto;
- }
+}
 
- #icon {
+#icon {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -33,12 +32,12 @@ main {
     background-color: black;
     color: white;
     font-size: 35px;
-    /* height: 100%; */
+    height: 100%;
     margin: 0 10px 0 0;
     position: relative;
-    /* z-index: 2;
+    z-index: 2;
     top: 0;
-    left: 0; */
+    left: 0;
 }
 
 #screen {
@@ -50,7 +49,7 @@ main {
 #cart {
     font-size: 30px;
     text-decoration: underline;
-    text-decoration-color:rgb(190, 180, 140);
+    text-decoration-color: rgb(190, 180, 140);
     margin-bottom: 20px;
     /* border: 3px solid aquamarine; */
 }
@@ -70,8 +69,8 @@ main {
 
 .catalog {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: 2fr 7fr 5fr 2fr;
+    gap: 30px;
     /* border: 3px solid lawngreen; */
 }
 
@@ -87,16 +86,39 @@ img {
     margin: 3px 0 2px 5px;
 }
 
-.controls {
+/* .controls {
     margin: 3px 0 2px 5px;
+} */
+
+span.reduce, span.increase {
+    font-size: 30px;
+    font-weight: 80;
+    padding: 0 3px;
+}
+
+.inputbox {
+    border: none;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+
+input[class="inputbox"]::placeholder {
+    color: black;
+    opacity: 1;
 }
 
 h4 {
-    font-size: 20px;
-    margin: 3px 0 2px 5px;
+    font-size: 30px;
+    font-weight: 30;
+    margin-top: 1px;
 }
 
-#order{
+span, h4:hover {
+    cursor: pointer;
+}
+
+#order {
     display: grid;
     grid-template-rows: 1fr 1fr;
     /* border: 3px solid crimson; */
@@ -109,13 +131,21 @@ h4 {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     background-color: rgb(190, 180, 140);
+    padding: 15px 30px 15px 15px;
+    text-align: left;
     /* border: 3px solid green; */
+}
+
+.header {
+    text-align: left;
+    margin-right: 10px;
 }
 
 .total {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 60px 0 5px;
 }
 
 #apply {
@@ -123,4 +153,31 @@ h4 {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     border: 2px solid rgb(190, 180, 140);
+    padding: 15px;
+    text-align: left;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 10px;
+    height: 28px;
+    color: white;
+    width: 110px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+div.promo input {
+    height: 35px;
+    width: 200px;
+    font-size: 1em;
+    padding: 0 7px;
+}
+
+button:hover {
+    border: 1px solid black;
+    background-color: wheat;
+    color: black;
 }

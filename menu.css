@@ -1,105 +1,141 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100vw;
 }
 
 main.container {
     height: 100vh;
     width: 100vw;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     overflow: auto;
-    /* margin: 50px;
-    margin-left: 30px; */
 }
 
 .div-container {
     display: grid;
-    border: 5px solid red;
-    grid-template-columns: 1fr 12fr;
+    /* border: 5px solid red; */
+    grid-template-columns: 2fr 19fr;
     gap: 30px;
-    height: 100vh;
-    width: 95%;
+    height: 93%;
+    width: 100%;
     overflow: auto;
+}
+
+.sushilogo {
+        font-size: 40px;
+        color: #F1D5BB;
+        padding: 0 21px;
+        cursor: pointer;
+        font-weight: 800;
+
+}
+
+p:hover {
+    background-color: #ebd2d2;;
+    color: black;
 }
 
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    border: 5px solid green;
-    border-radius: 30px;
+    /* border: 5px solid green; */
+    border-radius: 20px;
     background-color: black;
     color: white;
-    font-size: 30px;
-    padding-bottom: 20px;
     margin: 40px 0px 10px 30px;
-    /* position: fixed; */
-    z-index: 2;
-    top: 0;
-    left: 0;
+    height: 90%;
+    overflow: hidden;
+    max-width: 80px;
+    border-radius: 24px;
+    box-shadow: 10px 1px 15px rgba(0, 0, 0, 0.315);
 }
 
-.navbar a:hover, p:hover {
+i {
+    font-size: 40px;
+    padding: 5px 21px;
+}
+
+.navbar a:hover {
     background-color: #ebd2d2;
+    cursor: pointer;
 }
+
 .mainbody {
-    display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
-    border: 5px solid red;
-    margin: 40px 20px 0 0;
-    padding: 0 0 0 80px;
-}
+    /* border: 5px solid red; */
+    margin: 40px 0 0 30px;
+    padding: 20px 0 0 80px;
+    width: auto;
+} 
 
 div.heading {
     text-decoration: underline;
     text-decoration-color: burlywood;
-    padding-top: 20px;
-    font-size: 30px;
-}
-
-section div {
-    border: 5px solid blue;
-}
-
- nav.menubox img.image {
-    width: 100px;
-    height: 120px;
-    border-radius: 20px;
-}
-
-nav.menubox {
-    margin-top: 10px;
-    margin-left: 20px;
-    padding: 0 0 0 20px;
     text-align: left;
-    width: fit-content;
+    text-underline-offset: 5px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 div.contain {
     display: grid;
-    /* flex-direction: row;
-    flex-wrap: wrap; */
     align-items: center;
     justify-content:center;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 2px solid green; */
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px 30px 0 0;
+    margin-right:10px ;
+    width: auto;
+}
+
+nav.menubox {
+    height: 150px;
+    text-align: center;
+    width: 122px;
+    /* border: 5px solid blue; */
+    justify-content: center;
+}
+
+ nav.menubox img.image {
+    width: 85%;
+    height: 85%;
+    border-radius: 10px;
 }
 
 div.btn {
-    padding-top: 10px;
     text-align: center;
+    margin: 30px 100px 0 0;
 }
 
 footer {
-    padding: 10px 0 0 50px;
+    text-align:left;
+    font-size: small;
+    padding: 15px 0 0 0;
 }
 
 button {
     background-color: black;
     color: white;
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 2px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
 }
+
 button:hover {
     color: black;
     background-color: blanchedalmond;
+    border: 1px solid black;
 }
